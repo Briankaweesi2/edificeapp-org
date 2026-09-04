@@ -27,19 +27,29 @@ Everything is lifted from the app's `Theme.kt` so the site and the product are o
 
 ## Deploying
 
-GitHub Pages serves it from the default branch. `CNAME` claims `edificeapp.org`.
+Vercel, as a static site. There is no build step and no framework — point a Vercel project at
+this repo and leave the build command empty with the output directory as the root.
 
-DNS at the registrar, for an apex domain:
+`vercel.json` sets `trailingSlash` (the app links to `/privacy/` with the slash and it must not
+redirect away), long-lived caching for `/assets/`, and a Content-Security-Policy that allows
+exactly one third party: Google Fonts for the stylesheet, `fonts.gstatic.com` for the faces.
+Nothing else is permitted and `script-src` is `'none'`, because the site runs no JavaScript.
 
-    A     @   185.199.108.153
-    A     @   185.199.109.153
-    A     @   185.199.110.153
-    A     @   185.199.111.153
-    CNAME www <owner>.github.io
+### The domain
 
-Delete the registrar's parking records first, or they keep winning. HTTPS is issued
-automatically once the records resolve; tick **Enforce HTTPS** in the repo's Pages settings
-after that.
+In the Vercel project, add `edificeapp.org` and `www.edificeapp.org` under Settings -> Domains,
+then set the records Vercel shows you at Namecheap. Delete the registrar's parking records for
+`@` and `www` first, or they keep winning — `www` currently points at `parkingpage.namecheap.com`.
+The certificate is issued automatically once the records resolve.
+
+If you would rather Vercel ran the DNS, switch the domain to Custom DNS at Namecheap and use
+Vercel's nameservers instead of individual records.
+
+### Once the domain answers
+
+Change `LegalUrls.SITE` in the app from the Vercel preview host to `https://edificeapp.org`, and
+ship it. Until that release is out, the app's Settings links still point at the old host, so keep
+that host serving.
 
 ## Still to do
 
