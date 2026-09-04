@@ -1,0 +1,23 @@
+Android App Links — not yet live, deliberately.
+
+Serving a well-known file with a wrong fingerprint makes Android fail verification silently,
+which is worse than not serving one. So this is a template, not a served file.
+
+To turn it on:
+  1. Get the SHA-256 signing fingerprint. For a Play-signed app it is the one in
+     Play Console -> Release -> Setup -> App integrity -> App signing key certificate.
+     It is not a secret. Do not read it out of the local keystore.
+  2. Put it below in place of PLACEHOLDER, uppercase hex with colons.
+  3. Move this file to .well-known/assetlinks.json (that exact name, no extension change),
+     and confirm it serves as application/json with no redirect.
+  4. Add the https intent-filter with android:autoVerify="true" to the app's manifest.
+     MainActivity already routes on the URI path, so nothing else needs to change.
+
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.edifice.app",
+    "sha256_cert_fingerprints": ["PLACEHOLDER"]
+  }
+}]
