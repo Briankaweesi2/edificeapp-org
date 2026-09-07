@@ -3,7 +3,8 @@
   "trailingSlash": true,
   "rewrites": [
     { "source": "/c/(.*)", "destination": "/c/" },
-    { "source": "/scenes/(.*)", "destination": "/scenes/" }
+    { "source": "/scenes/(.*)", "destination": "/scenes/" },
+    { "source": "/.well-known/apple-app-site-association", "destination": "/.well-known/apple-app-site-association.json" }
   ],
   "headers": [
     {
@@ -17,12 +18,6 @@
           "value": "default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'"
         },
         { "key": "Strict-Transport-Security", "value": "max-age=63072000; includeSubDomains; preload" }
-      ]
-    },
-    {
-      "source": "/.well-known/apple-app-site-association",
-      "headers": [
-        { "key": "Content-Type", "value": "application/json" }
       ]
     },
     {
