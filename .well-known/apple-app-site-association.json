@@ -2,10 +2,22 @@
   "applinks": {
     "details": [
       {
-        "appIDs": ["6FGPMGQ5KY.com.edifice.app"],
+        "appIDs": [
+          "6FGPMGQ5KY.com.edifice.app"
+        ],
         "components": [
-          { "/": "/c/*", "comment": "a shared confession" },
-          { "/": "/scenes/*", "comment": "a shared scene, which opens its chapter" }
+          {
+            "/": "/c/*",
+            "comment": "a shared confession"
+          },
+          {
+            "/": "/scenes/*",
+            "comment": "a shared scene, which opens its chapter"
+          },
+          {
+            "/": "/s/*",
+            "comment": "a shared story"
+          }
         ]
       }
     ]

@@ -4,6 +4,7 @@
   "rewrites": [
     { "source": "/c/(.*)", "destination": "/c/" },
     { "source": "/scenes/(.*)", "destination": "/scenes/" },
+    { "source": "/s/(.*)", "destination": "/s/" },
     { "source": "/.well-known/apple-app-site-association", "destination": "/.well-known/apple-app-site-association.json" }
   ],
   "headers": [
