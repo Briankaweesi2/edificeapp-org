@@ -54,6 +54,14 @@ that host serving.
 ## Still to do
 
 - Replace `[APP STORE URL]` and `[GOOGLE PLAY URL]` in `index.html` once the listings are live.
-- `assetlinks.json.template` — turn on Android App Links when there is a fingerprint to use.
+- `.well-known/assetlinks.json` — Android App Links. Names `com.edifice.app` and the Play
+  **app signing** key's SHA-256 (App integrity → App signing, not the upload key). Public by
+  design; a signing fingerprint is extractable from any published APK.
+- `.well-known/apple-app-site-association.json` — iOS Universal Links, served at the
+  extensionless path Apple requires via a rewrite in `vercel.json`. The rewrite is load-bearing:
+  Vercel types a static file from its extension and a `Content-Type` header rule does not
+  override it, so the extensionless file went out as `application/octet-stream`, which iOS rejects.
+- Both files must be served by the **apex**, with no redirect. Android's App Links verifier does
+  not follow redirects, and `www` 308s here.
 - The privacy policy of record still describes email-and-password accounts. The app moved to
   Google and Apple sign-in on 2026-09-04, so that text needs revising at the source.

@@ -39,9 +39,18 @@
     if (!href) continue;
 
     var link = document.createElement("a");
-    link.className = slot.className;
     link.setAttribute("href", href);
     link.innerHTML = slot.innerHTML;
+    // Every attribute, not just the class. `data-store` is what assets/site.css keys the
+    // platform hide rules on, so dropping it here would leave BOTH store buttons showing on
+    // both platforms — invisible today, because an empty URL means nothing is replaced at all,
+    // and live the day either listing is published.
+    for (var a = 0; a < slot.attributes.length; a++) {
+      link.setAttribute(slot.attributes[a].name, slot.attributes[a].value);
+    }
+    link.removeAttribute("aria-disabled");
+    link.removeAttribute("role");
+    link.setAttribute("href", href);
 
     var label = slot.getAttribute("data-store-label");
     var labelEl = label && link.querySelector(".store-label");
