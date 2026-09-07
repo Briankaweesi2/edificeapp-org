@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.edifice.app",
+      "sha256_cert_fingerprints": [
+        "BF:06:71:6B:BE:F9:DE:9D:5A:08:52:22:03:94:4D:FE:DC:6B:EB:5D:AE:62:78:0B:1D:01:42:84:8B:8C:2B:8E"
+      ]
+    }
+  }
+]
