@@ -109,7 +109,7 @@
 
                 <div class="form-section">
                     <h3>Submit Web Account Deletion Request</h3>
-                    <form id="deletionForm" onsubmit="handleDeletionSubmit(event)">
+                    <form id="deletionForm">
                         <div class="form-group">
                             <label for="userEmail">Registered Account Email Address *</label>
                             <input type="email" id="userEmail" name="email" placeholder="name@example.com" required>
@@ -134,7 +134,7 @@
                     </form>
 
                     <div id="successMsg" class="success-msg">
-                        <strong>✓ Deletion Request Initiated:</strong> We have recorded your account deletion request for <span id="confirmedEmail"></span>. A confirmation notice has been dispatched. Your account will undergo immediate deactivation followed by permanent database purging after the 7-day safety cool-off period.
+                        <strong>Your email app should now be open</strong> with the request filled in. Send it and we will confirm by reply. If nothing opened, email <a href="mailto:supernaturalbrian@gmail.com?subject=Account%20Deletion%20Request%20-%20Edifice">supernaturalbrian@gmail.com</a> directly — that is the same route, and it is the one that counts.
                     </div>
                 </div>
 
@@ -177,5 +177,6 @@
     </nav>
   </div>
 </footer>
+<script src="/assets/delete-account.js"></script>
 </body>
 </html>
