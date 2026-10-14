@@ -1,15 +1,8 @@
 /*
  * Where a "get the app" control sends someone, decided per platform.
  *
- * ## Why the destinations are empty
- *
- * Neither listing is public yet — https://play.google.com/store/apps/details?id=com.edifice.app
- * answers 404 today, and there is no App Store URL at all. An empty string here means exactly
- * that, and the page keeps the state it was rendered in: a control that says the app is coming
- * rather than a link that 404s. Every page already renders that honest state in its HTML, so a
- * visitor with no JavaScript sees the same thing.
- *
- * Publishing is therefore one string each, in one file, for the whole site.
+ * The Android listing is live. Keep the destination here so every generated page, shared link,
+ * theme, scene and the home page points at the same canonical download URL.
  *
  * ## What the platform detection is and is not for
  *
@@ -22,7 +15,7 @@
 (function () {
   var STORES = {
     ios: "",
-    android: ""
+    android: "https://play.google.com/store/apps/details?id=com.edifice.app"
   };
 
   var ua = navigator.userAgent || "";
@@ -40,6 +33,8 @@
 
     var link = document.createElement("a");
     link.setAttribute("href", href);
+    link.setAttribute("target", "_blank");
+    link.setAttribute("rel", "noopener");
     link.innerHTML = slot.innerHTML;
     // Every attribute, not just the class. `data-store` is what assets/site.css keys the
     // platform hide rules on, so dropping it here would leave BOTH store buttons showing on

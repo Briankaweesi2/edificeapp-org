@@ -295,3 +295,4 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 400; margin: 0; letter-spac
 
 /* The pre-publication state: a control, not a link, so nothing can be tapped into a 404. */
 [data-store] { cursor: default; opacity: 0.72; }
+[data-store="android"] { cursor: pointer; opacity: 1; }

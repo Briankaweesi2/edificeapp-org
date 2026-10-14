@@ -53,7 +53,9 @@ that host serving.
 
 ## Still to do
 
-- Replace `[APP STORE URL]` and `[GOOGLE PLAY URL]` in `index.html` once the listings are live.
+- The Google Play listing is live at `https://play.google.com/store/apps/details?id=com.edifice.app`.
+  The shared `assets/store-links.js` file sends every Android download CTA there. Keep the iOS
+  control marked as coming soon until an App Store listing exists.
 - `.well-known/assetlinks.json` — Android App Links. Names `com.edifice.app` and the Play
   **app signing** key's SHA-256 (App integrity → App signing, not the upload key). Public by
   design; a signing fingerprint is extractable from any published APK.
