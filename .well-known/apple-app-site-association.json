@@ -17,6 +17,10 @@
           {
             "/": "/s/*",
             "comment": "a shared story"
+          },
+          {
+            "/": "/campaign/*",
+            "comment": "a shared Bible Month day"
           }
         ]
       }
