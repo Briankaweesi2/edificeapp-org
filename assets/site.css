@@ -3,11 +3,11 @@
    product are one thing. Two schemes that never mix; the page ramp is the only gradient. */
 
 :root {
-  --page-top: #E3ECE4;
-  --page-mid: #DCE7E9;
-  --page-bot: #E2DFEA;
-  --surface: #F7F9F6;
-  --sunken: #EAEFE9;
+  --page-top: #F7F7F5;
+  --page-mid: #F1F2F4;
+  --page-bot: #EBEDF1;
+  --surface: #FFFFFF;
+  --sunken: #EEEFF1;
   --ink: #141C17;
   --ink-2: #33423A;
   --ink-muted: #55645B;
