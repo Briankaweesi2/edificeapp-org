@@ -20,6 +20,7 @@
  * beside it is the route. Nothing here is load-bearing for the requirement being met.
  */
 (function () {
+  function tr(value){ return window.edificeText && window.edificeText[value] || value; }
   var form = document.getElementById("deletionForm");
   if (!form) return;
 
@@ -30,15 +31,15 @@
     var reason = (document.getElementById("deletionReason") || {}).value || "";
 
     var body =
-      "I am requesting deletion of my Edifice account.\n\n" +
-      "Account email: " + email + "\n\n" +
-      "Reason (optional): " + (reason || "—") + "\n\n" +
+      tr("I am requesting deletion of my Edifice account.")+"\n\n" +
+      tr("Account email:")+" " + email + "\n\n" +
+      tr("Reason (optional):")+" " + (reason || "—") + "\n\n" +
       "I understand this permanently deletes my account, journal entries, streaks and saved data " +
       "after the 7-day safety period.";
 
     var href =
       "mailto:supernaturalbrian@gmail.com" +
-      "?subject=" + encodeURIComponent("Account Deletion Request - Edifice") +
+      "?subject=" + encodeURIComponent(tr("Account Deletion Request - Edifice")) +
       "&body=" + encodeURIComponent(body);
 
     var notice = document.getElementById("successMsg");

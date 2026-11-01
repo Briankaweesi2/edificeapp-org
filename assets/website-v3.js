@@ -2,6 +2,7 @@
 (function () {
   'use strict';
   var ID = 'G-YH52011S44';
+  function tr(value){ return window.edificeText && window.edificeText[value] || value; }
   var KEY = 'edifice-website-analytics-v1';
   var active = false;
   var production = /^(www\.)?edificeapp\.org$/.test(location.hostname);
@@ -9,7 +10,9 @@
   try { saved = localStorage.getItem(KEY) || ''; } catch (_) {}
   // Report only broad page groups, never individual confessions, stories, searches or query strings.
   var groups = ['daily-confessions', 'glory', 'download', 'about', 'themes', 'scenes', 'campaign', 'privacy', 'terms', 'support', 'delete-account'];
-  var first = location.pathname.split('/')[1];
+  var pathParts = location.pathname.split('/').filter(Boolean);
+  var activeLang = ['zh','hi','es','ar'].indexOf(pathParts[0]) >= 0 ? pathParts.shift() : 'en';
+  var first = pathParts[0] || '';
   var group = first === 'c' || first === 's' ? 'shared' : (groups.indexOf(first) >= 0 ? first : 'home');
   function start() {
     if (active || !production) return;
@@ -38,12 +41,12 @@
   }
   var banner = document.createElement('section');
   banner.className='analytics-choice';
-  banner.setAttribute('aria-label','Website analytics preference');
-  banner.innerHTML='<div><strong>Your cookie preferences</strong><p>We use optional analytics cookies to understand how our website is used and improve your experience. You can accept or reject them, and change your choice anytime. <a href="/privacy/#website-analytics">Learn more</a></p></div><div class="analytics-actions"><button type="button" data-choice="denied">Reject optional</button><button type="button" data-choice="granted">Accept cookies</button></div>';
+  banner.setAttribute('aria-label',tr('Website analytics preference'));
+  banner.innerHTML='<div><strong>'+tr('Your cookie preferences')+'</strong><p>'+tr('We use optional analytics cookies to understand how our website is used and improve your experience. You can accept or reject them, and change your choice anytime.')+' <a href="/'+(activeLang==='en'?'':'/'+activeLang)+'/privacy/#website-analytics">'+tr('Learn more')+'</a></p></div><div class="analytics-actions"><button type="button" data-choice="denied">'+tr('Reject optional')+'</button><button type="button" data-choice="granted">'+tr('Accept cookies')+'</button></div>';
   banner.hidden = saved === 'granted' || saved === 'denied';
   document.body.appendChild(banner);
   var settings = document.createElement('button');
-  settings.type='button'; settings.className='analytics-settings'; settings.textContent='Cookie preferences';
+  settings.type='button'; settings.className='analytics-settings'; settings.textContent=tr('Cookie preferences');
   (document.querySelector('footer') || document.body).appendChild(settings);
   settings.addEventListener('click',function(){banner.hidden=false;banner.querySelector('button').focus();});
   banner.addEventListener('click',function(event){

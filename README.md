@@ -67,3 +67,9 @@ that host serving.
   not follow redirects, and `www` 308s here.
 - The privacy policy of record still describes email-and-password accounts. The app moved to
   Google and Apple sign-in on 2026-09-04, so that text needs revising at the source.
+
+## Languages
+
+The public pages are available in English, Simplified Chinese (/zh/), Hindi (/hi/), Spanish (/es/), and Arabic (/ar/). Each page has a language picker; Arabic uses right-to-left layout. The locale catalogs and the tools/i18n/render_locales.py generator keep generated routes aligned with the English page set. The renderer refuses incomplete locale catalogs.
+
+Scripture uses a named translation for each locale: Chinese Union Version (Simplified), Indian Revised Version Hindi (2019), Reina-Valera 1909, and Arabic Van Dyck. Hindi excerpts are attributed under CC BY-SA 4.0. If an edition lacks a verse, the page keeps the King James quotation and citation together.

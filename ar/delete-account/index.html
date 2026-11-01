@@ -1,0 +1,106 @@
+<!doctype html>
+<html dir="rtl" lang="ar">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>حذف الحساب · Edifice</title>
+<meta content="كيفية حذف حساب Edifice وكل ما هو مخزن معه." name="description"/>
+<link href="https://edificeapp.org/ar/delete-account/" rel="canonical"/>
+<meta content="#E3ECE4" media="(prefers-color-scheme: light)" name="theme-color"/>
+<meta content="#131218" media="(prefers-color-scheme: dark)" name="theme-color"/>
+<link href="/assets/icon-32.png" rel="icon" sizes="32x32"/>
+<link href="/assets/icon-512.png" rel="apple-touch-icon"/>
+<meta content="website" property="og:type"/>
+<meta content="https://edificeapp.org/ar/delete-account/" property="og:url"/>
+<meta content="حذف الحساب · Edifice" property="og:title"/>
+<meta content="كيفية حذف حساب Edifice وكل ما هو مخزن معه." property="og:description"/>
+<meta content="https://edificeapp.org/assets/icon-512.png" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&amp;display=swap" rel="stylesheet"/>
+<link href="/assets/site.css?v=20261025" rel="stylesheet"/>
+<link href="/assets/marketing-v2.css" rel="stylesheet"/>
+<link href="/assets/website-v3.css" rel="stylesheet"/><script defer="True" src="/assets/i18n-ar.js"></script><script defer="" src="/assets/website-v3.js"></script><script defer="" src="/assets/deep-links-v3.js"></script><link href="https://edificeapp.org/delete-account/" hreflang="x-default" rel="alternate"/><link href="https://edificeapp.org/zh/delete-account/" hreflang="zh-Hans" rel="alternate"/><link href="https://edificeapp.org/hi/delete-account/" hreflang="hi" rel="alternate"/><link href="https://edificeapp.org/es/delete-account/" hreflang="es" rel="alternate"/><link href="https://edificeapp.org/ar/delete-account/" hreflang="ar" rel="alternate"/><link href="/assets/i18n.css" rel="stylesheet"/></head>
+<body>
+<a class="skip-link" href="#main">انتقل إلى المحتوى</a><nav aria-label="اختر اللغة" class="language-picker"><a href="/delete-account/" hreflang="en" lang="en">English</a><a href="/zh/delete-account/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a><a href="/hi/delete-account/" hreflang="hi" lang="hi">हिन्दी</a><a href="/es/delete-account/" hreflang="es" lang="es">Español</a><a aria-current="page" href="/ar/delete-account/" hreflang="ar" lang="ar">العربية</a></nav><header class="marketing-header wrap"><a aria-label="الصفحة الرئيسية لـ Edifice" class="brand" href="/ar/"><img alt="" height="30" src="/assets/logo.svg" width="30"/><span>Edifice</span></a><nav aria-label="التنقل الرئيسي" class="marketing-desktop"><a href="/ar/daily-confessions/">اعترافات يومية</a><a href="/ar/themes/">الموضوعات</a><a href="/ar/scenes/">مشاهد كتابية</a><a href="/ar/glory/">Glory</a><a href="/ar/about/">عن التطبيق</a></nav><a class="btn btn-primary desktop-download" href="/ar/download/">احصل على Edifice ↗</a><details class="marketing-menu"><summary>القائمة</summary><nav aria-label="التنقل على الهاتف المحمول"><a href="/ar/daily-confessions/">اعترافات يومية</a><a href="/ar/themes/">الموضوعات</a><a href="/ar/scenes/">مشاهد كتابية</a><a href="/ar/glory/">Glory</a><a href="/ar/about/">عن التطبيق</a><a href="/ar/download/">احصل على Edifice ↗</a></nav></details></header>
+<main class="wrap" id="main">
+<article class="prose" style="padding-block: clamp(40px, 6vw, 76px) 96px; margin-inline: auto;">
+<article class="doc-card">
+<div class="doc-header">
+<span class="doc-badge">إدارة الحساب</span>
+<h1>احذف حسابك وبياناتك الشخصية</h1>
+<p class="doc-subtitle">لديك الحق الكامل في حذف حساب Edifice وكل بياناتك الشخصية المرتبطة به في أي وقت.</p>
+</div>
+<h2>كيف يعمل حذف الحساب (عملية من مرحلتين)</h2>
+<p>عندما تبدأ حذف حسابك في التطبيق (عبر<code>POST /v1/account/deletion</code>) أو إرسال طلب حذف عبر النموذج أدناه، ينفّذ نظامنا عملية حذف آمنة من مرحلتين:</p>
+<div class="step-cards">
+<div class="step-item">
+<div class="step-num">1</div>
+<div class="step-body">
+<h3>المرحلة 1: الإبطال والتعطيل الفوريان</h3>
+<p>تُبطَل فورًا جميع رموز المصادقة والجلسات ورموز الأجهزة النشطة. ويُسجَّل خروج حسابك فورًا من جميع الأجهزة ويُعطَّل عن الاستخدام. وتُزال القصص المنشورة فورًا من الوصول العام.</p>
+</div>
+</div>
+<div class="step-item">
+<div class="step-num">2</div>
+<div class="step-body">
+<h3>المرحلة 2: فترة تهدئة وأمان لنحو 7 أيام</h3>
+<p>لحماية الأعضاء من الفقد العرضي أو اختراق الحساب دون إذن، تُحتفظ البيانات في حالة مقفلة وغير نشطة لنحو 7 أيام. وإذا غيرت رأيك، فأعد تسجيل الدخول إلى تطبيق الهاتف خلال هذه المدة لإلغاء الحذف المجدول.</p>
+</div>
+</div>
+<div class="step-item">
+<div class="step-num">3</div>
+<div class="step-body">
+<h3>المرحلة 3: المحو النهائي الذي لا رجعة فيه من قاعدة البيانات</h3>
+<p>بعد انقضاء فترة السبعة أيام، تحذف عملية الحذف الآلية نهائيًا سجل حسابك وبريدك الإلكتروني وكلمة مرورك المشفّرة وملفك الشخصي ومدخلات يومياتك الخاصة وسجل السلاسل والممارسة وأهدافك المحفوظة وتفضيلاتك من قواعد بياناتنا الأساسية.</p>
+</div>
+</div>
+</div>
+<div class="warning-box">
+<h3>⚠️ إشعار مهم بشأن محو البيانات</h3>
+<p><strong>ما يُمحى بالكامل:</strong>عنوان بريدك الإلكتروني وملفك الشخصي ويومياتك الخاصة بالكامل وسجلات سلاسل الاعترافات وسجل الممارسة والاعترافات المحفوظة وأهدافك المخصصة.</p>
+<p><strong>ما يُحتفظ به:</strong>إيصال تجزئة تشفيرية مجهولة الهوية لمعرّف المستخدم السابق (لإثبات الامتثال لمتطلبات الحذف التنظيمية دون الاحتفاظ بمعلومات شخصية)، ورموز إيصالات المعاملات غير المرتبطة بالحساب لأغراض المحاسبة والضرائب.</p>
+</div>
+<h2>الخيار أ: حذف الحساب من التطبيق (فوري وذاتي)</h2>
+<p>إذا كان تطبيق Edifice متاحًا على جهازك المحمول:</p>
+<ol>
+<li>افتح<strong>Edifice</strong>.</li>
+<li>انتقل إلى<strong>أنا / الملف الشخصي</strong>من القائمة (أو اضغط على الإعدادات).</li>
+<li>اختر<strong>الإعدادات ← حذف الحساب</strong>.</li>
+<li>أكّد طلبك. ستُنهى جلساتك فورًا وسيُجدول حذف حسابك.</li>
+</ol>
+<h2>الخيار ب: طلب حذف عبر الويب</h2>
+<p>إذا أزلت التطبيق أو تعذّر عليك تسجيل الدخول إلى جهازك، يمكنك إرسال طلب الحذف مباشرة عبر صفحة الويب هذه أو مراسلة فريق الخصوصية بالبريد الإلكتروني.</p>
+<div class="form-section">
+<h3>أرسل طلب حذف الحساب عبر الويب</h3>
+<form id="deletionForm">
+<div class="form-group">
+<label for="userEmail">عنوان البريد الإلكتروني للحساب المسجّل *</label>
+<input id="userEmail" name="email" placeholder="name@example.com" required="" type="email"/>
+</div>
+<div class="form-group">
+<label for="deletionReason">سبب حذف الحساب (اختياري)</label>
+<textarea id="deletionReason" name="reason" placeholder="أخبرنا عن سبب مغادرتك (اختياري)..." rows="3"></textarea>
+</div>
+<div class="form-group" style="display: flex; gap: 8px; align-items: flex-start;">
+<input id="confirmCheckbox" required="" style="margin-top: 4px;" type="checkbox"/>
+<label for="confirmCheckbox" style="font-weight: 400; font-size: 13.5px; color: var(--ink-secondary); margin-bottom: 0;">أفهم أن هذا الطلب سيحذف نهائيًا حساب Edifice ومدخلات يومياتي وسلاسل الأيام والبيانات المحفوظة بعد فترة الأمان البالغة 7 أيام.</label>
+</div>
+<div class="actions-row">
+<button class="btn-submit" type="submit">طلب حذف الحساب</button>
+<a class="btn-secondary" href="mailto:supernaturalbrian@gmail.com?subject=Account%20Deletion%20Request%20-%20Edifice">راسل الدعم بالبريد الإلكتروني بدلًا من ذلك</a>
+</div>
+</form>
+<div class="success-msg" id="successMsg">
+<strong>يُفترض أن تطبيق البريد الإلكتروني قد فُتح الآن</strong>مع الطلب مكتملًا. أرسله وسنؤكد استلامه بالرد. وإذا لم يُفتح شيء، راسل<a href="mailto:supernaturalbrian@gmail.com?subject=Account%20Deletion%20Request%20-%20Edifice">supernaturalbrian@gmail.com</a>مباشرة؛ فهذا هو المسار نفسه وهو الطلب المعتمد.</div>
+</div>
+<h2 style="margin-top: 36px;">الاشتراكات والفوترة</h2>
+<p>يُرجى العلم أن حذف حساب Edifice الخاص بك لا<strong>ليس</strong>لا يلغي ذلك تلقائيًا الاشتراكات النشطة عبر Google Play Store أو Apple App Store. لمنع التجديد والفوترة مستقبلًا، أدر اشتراكك أو ألغِه مباشرة من إعدادات حسابك على Google Play أو Apple ID.</p>
+</article>
+</article>
+</main>
+<footer class="site-footer"><div class="wrap"><div><a class="brand" href="/ar/">Edifice</a><p class="footer-note">ابنِ حياتك على الكلمة.<br/>© 2026 Edifice</p></div><nav aria-label="التنقل في التذييل" class="footer-links"><a href="/ar/daily-confessions/">اعترافات يومية</a><a href="/ar/themes/">الموضوعات</a><a href="/ar/scenes/">مشاهد كتابية</a><a href="/ar/glory/">Glory</a><a href="/ar/about/">عن التطبيق</a><a href="/ar/download/">تنزيل</a><a href="/ar/support/">الدعم</a><a href="/ar/privacy/">الخصوصية</a><a href="/ar/terms/">الشروط</a><a href="/ar/delete-account/">حذف الحساب</a></nav></div><p class="bible-attribution" lang="ar">مقتطفات الكتاب المقدس من ترجمة فان دايك، وهي ضمن الملكية العامة.  <a href="https://ebible.org/arb-vd/copyright.htm" rel="noopener">eBible.org</a></p></footer>
+<script src="/assets/delete-account.js"></script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!doctype html>
+<html dir="ltr" lang="hi">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>खाता हटाएँ · Edifice</title>
+<meta content="अपना Edifice खाता और उसमें सहेजी गई सारी जानकारी कैसे हटाएँ।" name="description"/>
+<link href="https://edificeapp.org/hi/delete-account/" rel="canonical"/>
+<meta content="#E3ECE4" media="(prefers-color-scheme: light)" name="theme-color"/>
+<meta content="#131218" media="(prefers-color-scheme: dark)" name="theme-color"/>
+<link href="/assets/icon-32.png" rel="icon" sizes="32x32"/>
+<link href="/assets/icon-512.png" rel="apple-touch-icon"/>
+<meta content="website" property="og:type"/>
+<meta content="https://edificeapp.org/hi/delete-account/" property="og:url"/>
+<meta content="खाता हटाएँ · Edifice" property="og:title"/>
+<meta content="अपना Edifice खाता और उसमें सहेजी गई सारी जानकारी कैसे हटाएँ।" property="og:description"/>
+<meta content="https://edificeapp.org/assets/icon-512.png" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&amp;display=swap" rel="stylesheet"/>
+<link href="/assets/site.css?v=20261025" rel="stylesheet"/>
+<link href="/assets/marketing-v2.css" rel="stylesheet"/>
+<link href="/assets/website-v3.css" rel="stylesheet"/><script defer="True" src="/assets/i18n-hi.js"></script><script defer="" src="/assets/website-v3.js"></script><script defer="" src="/assets/deep-links-v3.js"></script><link href="https://edificeapp.org/delete-account/" hreflang="x-default" rel="alternate"/><link href="https://edificeapp.org/zh/delete-account/" hreflang="zh-Hans" rel="alternate"/><link href="https://edificeapp.org/hi/delete-account/" hreflang="hi" rel="alternate"/><link href="https://edificeapp.org/es/delete-account/" hreflang="es" rel="alternate"/><link href="https://edificeapp.org/ar/delete-account/" hreflang="ar" rel="alternate"/><link href="/assets/i18n.css" rel="stylesheet"/></head>
+<body>
+<a class="skip-link" href="#main">मुख्य सामग्री पर जाएँ</a><nav aria-label="भाषा चुनें" class="language-picker"><a href="/delete-account/" hreflang="en" lang="en">English</a><a href="/zh/delete-account/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a><a aria-current="page" href="/hi/delete-account/" hreflang="hi" lang="hi">हिन्दी</a><a href="/es/delete-account/" hreflang="es" lang="es">Español</a><a href="/ar/delete-account/" hreflang="ar" lang="ar">العربية</a></nav><header class="marketing-header wrap"><a aria-label="Edifice मुख्य पृष्ठ" class="brand" href="/hi/"><img alt="" height="30" src="/assets/logo.svg" width="30"/><span>Edifice</span></a><nav aria-label="मुख्य नेविगेशन" class="marketing-desktop"><a href="/hi/daily-confessions/">दैनिक घोषणाएँ</a><a href="/hi/themes/">विषय</a><a href="/hi/scenes/">बाइबल के दृश्य</a><a href="/hi/glory/">Glory</a><a href="/hi/about/">परिचय</a></nav><a class="btn btn-primary desktop-download" href="/hi/download/">Edifice पाएँ ↗</a><details class="marketing-menu"><summary>मेन्यू</summary><nav aria-label="मोबाइल नेविगेशन"><a href="/hi/daily-confessions/">दैनिक घोषणाएँ</a><a href="/hi/themes/">विषय</a><a href="/hi/scenes/">बाइबल के दृश्य</a><a href="/hi/glory/">Glory</a><a href="/hi/about/">परिचय</a><a href="/hi/download/">Edifice पाएँ ↗</a></nav></details></header>
+<main class="wrap" id="main">
+<article class="prose" style="padding-block: clamp(40px, 6vw, 76px) 96px; margin-inline: auto;">
+<article class="doc-card">
+<div class="doc-header">
+<span class="doc-badge">खाता प्रबंधन</span>
+<h1>अपना खाता और निजी डेटा हटाएँ</h1>
+<p class="doc-subtitle">आप किसी भी समय अपना Edifice खाता और उससे जुड़ा निजी डेटा पूरी तरह हटाने के अधिकारी हैं।</p>
+</div>
+<h2>खाता हटाने की प्रक्रिया (दो चरण)</h2>
+<p>जब आप ऐप में खाता हटाने की प्रक्रिया शुरू करते हैं (इस रास्ते से<code>POST /v1/account/deletion</code>) या नीचे वेब से हटाने का अनुरोध भेजें। हम खाते को दो चरणों में सुरक्षित रूप से हटाते हैं:</p>
+<div class="step-cards">
+<div class="step-item">
+<div class="step-num">1</div>
+<div class="step-body">
+<h3>चरण 1: तुरंत अमान्य करना और निष्क्रिय करना</h3>
+<p>सभी सक्रिय प्रमाणीकरण टोकन, सत्र और डिवाइस टोकन तुरंत रद्द कर दिए जाते हैं। सभी डिवाइस पर आपके खाते से तुरंत साइन आउट हो जाता है और खाता निष्क्रिय कर दिया जाता है। प्रकाशित कहानियाँ तुरंत सार्वजनिक पहुँच से हटा दी जाती हैं।</p>
+</div>
+</div>
+<div class="step-item">
+<div class="step-num">2</div>
+<div class="step-body">
+<h3>चरण 2: लगभग 7 दिनों की सुरक्षा अवधि</h3>
+<p>अनजाने में डेटा खोने या बिना अनुमति खाते पर कब्ज़ा होने से बचाने के लिए डेटा लगभग 7 दिनों तक लॉक और निष्क्रिय रखा जाता है। यदि आपका मन बदल जाए, तो इस अवधि में मोबाइल ऐप में फिर से साइन-इन करने से तय किया गया हटाना रद्द हो जाएगा।</p>
+</div>
+</div>
+<div class="step-item">
+<div class="step-num">3</div>
+<div class="step-body">
+<h3>चरण 3: डेटाबेस से स्थायी और अपरिवर्तनीय रूप से मिटाना</h3>
+<p>7 दिनों की अवधि समाप्त होने पर स्वचालित हटाने की प्रक्रिया हमारे मुख्य डेटाबेस से आपका खाता रिकॉर्ड, ईमेल, हैश किया हुआ पासवर्ड, प्रोफ़ाइल, निजी डायरी प्रविष्टियाँ, सिलसिले और अभ्यास का इतिहास, सहेजे लक्ष्य और प्राथमिकताएँ हमेशा के लिए मिटा देती है।</p>
+</div>
+</div>
+</div>
+<div class="warning-box">
+<h3>⚠️ डेटा मिटाने के बारे में महत्वपूर्ण सूचना</h3>
+<p><strong>क्या पूरी तरह मिटाया जाता है:</strong>आपका ईमेल पता, प्रोफ़ाइल, पूरी निजी डायरी, घोषणा-सिलसिले का रिकॉर्ड, अभ्यास इतिहास, सहेजी गई घोषणाएँ और आपके बनाए लक्ष्य।</p>
+<p><strong>क्या सहेजकर रखा जाता है:</strong>आपकी पुरानी उपयोगकर्ता आईडी की गुमनाम क्रिप्टोग्राफ़िक हैश रसीद (निजी जानकारी रखे बिना नियमानुसार डेटा मिटाने का प्रमाण) और लेखांकन व कर दायित्वों के लिए ऐसे लेन-देन रसीद टोकन जो आपके खाते से जुड़े नहीं हैं।</p>
+</div>
+<h2>विकल्प A: ऐप में खाता हटाना (तुरंत, स्वयं करें)</h2>
+<p>यदि आपके मोबाइल डिवाइस पर Edifice ऐप उपलब्ध है:</p>
+<ol>
+<li>खोलें<strong>Edifice</strong>.</li>
+<li>इस पर जाएँ:<strong>मैं / प्रोफ़ाइल</strong>टैब (या Settings पर टैप करें)।</li>
+<li>चुनें<strong>सेटिंग्स → खाता हटाना</strong>.</li>
+<li>अपने अनुरोध की पुष्टि करें। आपके सभी सत्र तुरंत समाप्त कर दिए जाएँगे और डेटा हटाने का समय निर्धारित होगा।</li>
+</ol>
+<h2>विकल्प B: वेब से खाता हटाने का अनुरोध</h2>
+<p>यदि आपने ऐप अनइंस्टॉल कर दिया है या डिवाइस में साइन-इन नहीं कर पा रहे हैं, तो इसी वेब पृष्ठ से डेटा हटाने का अनुरोध भेजें या हमारी गोपनीयता टीम को ईमेल करें।</p>
+<div class="form-section">
+<h3>वेब से खाता हटाने का अनुरोध भेजें</h3>
+<form id="deletionForm">
+<div class="form-group">
+<label for="userEmail">पंजीकृत खाते का ईमेल पता *</label>
+<input id="userEmail" name="email" placeholder="name@example.com" required="" type="email"/>
+</div>
+<div class="form-group">
+<label for="deletionReason">हटाने का कारण (वैकल्पिक)</label>
+<textarea id="deletionReason" name="reason" placeholder="बताएँ कि आप क्यों जा रहे हैं (वैकल्पिक)..." rows="3"></textarea>
+</div>
+<div class="form-group" style="display: flex; gap: 8px; align-items: flex-start;">
+<input id="confirmCheckbox" required="" style="margin-top: 4px;" type="checkbox"/>
+<label for="confirmCheckbox" style="font-weight: 400; font-size: 13.5px; color: var(--ink-secondary); margin-bottom: 0;">मैं समझता हूँ कि 7 दिनों की सुरक्षा अवधि के बाद यह अनुरोध मेरा Edifice खाता, डायरी की प्रविष्टियाँ, सिलसिले के रिकॉर्ड और सहेजा डेटा हमेशा के लिए मिटा देगा।</label>
+</div>
+<div class="actions-row">
+<button class="btn-submit" type="submit">खाता हटाने का अनुरोध करें</button>
+<a class="btn-secondary" href="mailto:supernaturalbrian@gmail.com?subject=Account%20Deletion%20Request%20-%20Edifice">इसके बजाय ईमेल से सहायता लें</a>
+</div>
+</form>
+<div class="success-msg" id="successMsg">
+<strong>आपका ईमेल ऐप अब खुल जाना चाहिए</strong>आपका अनुरोध भरा हुआ होगा। उसे भेजें; हम जवाब देकर पुष्टि करेंगे। अगर कुछ नहीं खुला, तो इस पते पर ईमेल करें<a href="mailto:supernaturalbrian@gmail.com?subject=Account%20Deletion%20Request%20-%20Edifice">supernaturalbrian@gmail.com</a>सीधे—यही वही तरीका है और इसी को मान्य माना जाता है।</div>
+</div>
+<h2 style="margin-top: 36px;">सदस्यताएँ और बिलिंग</h2>
+<p>ध्यान दें कि Edifice खाता हटाने से<strong>नहीं</strong>Google Play Store या Apple App Store से बिल की जा रही सक्रिय सदस्यताओं को अपने आप रद्द कर दें। आगे की बिलिंग रोकने के लिए अपनी Google Play या Apple ID खाता सेटिंग में सदस्यता प्रबंधित या रद्द करें।</p>
+</article>
+</article>
+</main>
+<footer class="site-footer"><div class="wrap"><div><a class="brand" href="/hi/">Edifice</a><p class="footer-note">परमेश्वर के वचन पर अपना जीवन बनाएँ।<br/>© 2026 Edifice</p></div><nav aria-label="पादलेख नेविगेशन" class="footer-links"><a href="/hi/daily-confessions/">दैनिक घोषणाएँ</a><a href="/hi/themes/">विषय</a><a href="/hi/scenes/">बाइबल के दृश्य</a><a href="/hi/glory/">Glory</a><a href="/hi/about/">परिचय</a><a href="/hi/download/">डाउनलोड</a><a href="/hi/support/">सहायता</a><a href="/hi/privacy/">गोपनीयता</a><a href="/hi/terms/">शर्तें</a><a href="/hi/delete-account/">खाता हटाएँ</a></nav></div><p class="bible-attribution" lang="hi">पवित्रशास्त्र के अंश Indian Revised Version Holy Bible (Hindi), 2019 से हैं। © Bridge Connectivity Solutions Pvt. Ltd. (2017–2019), CC BY-SA 4.0. संदर्भानुसार चुने गए अंश उसी लाइसेंस के अंतर्गत रूपांतरित हैं। स्रोत: eBible.org. <a href="https://ebible.org/hin2017/copyright.htm" rel="noopener">eBible.org</a></p></footer>
+<script src="/assets/delete-account.js"></script>
+</body>
+</html>

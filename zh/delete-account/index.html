@@ -1,0 +1,106 @@
+<!doctype html>
+<html dir="ltr" lang="zh-Hans">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>删除账户 · Edifice</title>
+<meta content="如何删除你的 Edifice 账户及其中保存的所有信息。" name="description"/>
+<link href="https://edificeapp.org/zh/delete-account/" rel="canonical"/>
+<meta content="#E3ECE4" media="(prefers-color-scheme: light)" name="theme-color"/>
+<meta content="#131218" media="(prefers-color-scheme: dark)" name="theme-color"/>
+<link href="/assets/icon-32.png" rel="icon" sizes="32x32"/>
+<link href="/assets/icon-512.png" rel="apple-touch-icon"/>
+<meta content="website" property="og:type"/>
+<meta content="https://edificeapp.org/zh/delete-account/" property="og:url"/>
+<meta content="删除账户 · Edifice" property="og:title"/>
+<meta content="如何删除你的 Edifice 账户及其中保存的所有信息。" property="og:description"/>
+<meta content="https://edificeapp.org/assets/icon-512.png" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&amp;display=swap" rel="stylesheet"/>
+<link href="/assets/site.css?v=20261025" rel="stylesheet"/>
+<link href="/assets/marketing-v2.css" rel="stylesheet"/>
+<link href="/assets/website-v3.css" rel="stylesheet"/><script defer="True" src="/assets/i18n-zh.js"></script><script defer="" src="/assets/website-v3.js"></script><script defer="" src="/assets/deep-links-v3.js"></script><link href="https://edificeapp.org/delete-account/" hreflang="x-default" rel="alternate"/><link href="https://edificeapp.org/zh/delete-account/" hreflang="zh-Hans" rel="alternate"/><link href="https://edificeapp.org/hi/delete-account/" hreflang="hi" rel="alternate"/><link href="https://edificeapp.org/es/delete-account/" hreflang="es" rel="alternate"/><link href="https://edificeapp.org/ar/delete-account/" hreflang="ar" rel="alternate"/><link href="/assets/i18n.css" rel="stylesheet"/></head>
+<body>
+<a class="skip-link" href="#main">跳至正文</a><nav aria-label="选择语言" class="language-picker"><a href="/delete-account/" hreflang="en" lang="en">English</a><a aria-current="page" href="/zh/delete-account/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a><a href="/hi/delete-account/" hreflang="hi" lang="hi">हिन्दी</a><a href="/es/delete-account/" hreflang="es" lang="es">Español</a><a href="/ar/delete-account/" hreflang="ar" lang="ar">العربية</a></nav><header class="marketing-header wrap"><a aria-label="Edifice 首页" class="brand" href="/zh/"><img alt="" height="30" src="/assets/logo.svg" width="30"/><span>Edifice</span></a><nav aria-label="主导航" class="marketing-desktop"><a href="/zh/daily-confessions/">每日宣告</a><a href="/zh/themes/">主题</a><a href="/zh/scenes/">圣经篇章</a><a href="/zh/glory/">Glory</a><a href="/zh/about/">关于</a></nav><a class="btn btn-primary desktop-download" href="/zh/download/">获取 Edifice ↗</a><details class="marketing-menu"><summary>菜单</summary><nav aria-label="移动导航"><a href="/zh/daily-confessions/">每日宣告</a><a href="/zh/themes/">主题</a><a href="/zh/scenes/">圣经篇章</a><a href="/zh/glory/">Glory</a><a href="/zh/about/">关于</a><a href="/zh/download/">获取 Edifice ↗</a></nav></details></header>
+<main class="wrap" id="main">
+<article class="prose" style="padding-block: clamp(40px, 6vw, 76px) 96px; margin-inline: auto;">
+<article class="doc-card">
+<div class="doc-header">
+<span class="doc-badge">账户管理</span>
+<h1>删除你的账户与个人数据</h1>
+<p class="doc-subtitle">你完全有权随时删除 Edifice 账户及所有相关个人数据。</p>
+</div>
+<h2>账户删除流程（两阶段）</h2>
+<p>当你在应用中发起账户删除请求时（路径：<code>POST /v1/account/deletion</code>），或者在下方提交网页账户删除申请；我们的系统会执行安全的两阶段删除流程：</p>
+<div class="step-cards">
+<div class="step-item">
+<div class="step-num">1</div>
+<div class="step-body">
+<h3>第 1 阶段：立即撤销与停用</h3>
+<p>所有有效的身份验证令牌、会话和设备令牌都会立即撤销。你的账户会在所有设备上立即退出登录并停用。已发布的故事也会立即从公开访问中移除。</p>
+</div>
+</div>
+<div class="step-item">
+<div class="step-num">2</div>
+<div class="step-body">
+<h3>第 2 阶段：约 7 天的安全等待期</h3>
+<p>为避免用户意外丢失数据或账户遭未经授权者接管，数据会以锁定、停用状态保留约 7 天。如果你改变主意，在此期间重新登录移动应用即可取消预定的删除。</p>
+</div>
+</div>
+<div class="step-item">
+<div class="step-num">3</div>
+<div class="step-body">
+<h3>第 3 阶段：从数据库中永久且不可逆地删除数据</h3>
+<p>7 天期限届满后，自动删除程序会从主数据库中永久删除你的账户记录、电子邮件、密码哈希、个人资料、私人日记、连续记录和操练历史、已保存目标及偏好设置。</p>
+</div>
+</div>
+</div>
+<div class="warning-box">
+<h3>⚠️ 关于数据删除的重要通知</h3>
+<p><strong>将彻底删除的内容：</strong>你的电子邮件地址、个人资料、全部私人日记、宣告连续记录、操练历史、已保存的宣告和自定义目标。</p>
+<p><strong>将保留的内容：</strong>保留一份无法识别身份的原账户 ID 加密哈希凭据（用于证明符合删除法规，同时不保留个人信息），以及与账户解除关联的交易凭据令牌，用于会计和税务义务。</p>
+</div>
+<h2>选项 A：在应用内删除（即时自助办理）</h2>
+<p>如果你可以使用移动设备上的 Edifice 应用：</p>
+<ol>
+<li>打开<strong>Edifice</strong>.</li>
+<li>前往<strong>我 / 个人资料</strong>标签页（或点按“设置”）。</li>
+<li>选择<strong>设置 → 删除账户</strong>.</li>
+<li>请确认你的申请。你的会话将立即终止，并安排删除账户。</li>
+</ol>
+<h2>选项 B：提交网页删除申请</h2>
+<p>如果你已卸载应用或无法在设备上登录，可以直接通过本网页提交删除申请，或发送电子邮件给我们的隐私团队。</p>
+<div class="form-section">
+<h3>提交网页账户删除申请</h3>
+<form id="deletionForm">
+<div class="form-group">
+<label for="userEmail">注册账户的电子邮件地址 *</label>
+<input id="userEmail" name="email" placeholder="name@example.com" required="" type="email"/>
+</div>
+<div class="form-group">
+<label for="deletionReason">删除原因（可选）</label>
+<textarea id="deletionReason" name="reason" placeholder="请告诉我们你离开的原因（可选）…" rows="3"></textarea>
+</div>
+<div class="form-group" style="display: flex; gap: 8px; align-items: flex-start;">
+<input id="confirmCheckbox" required="" style="margin-top: 4px;" type="checkbox"/>
+<label for="confirmCheckbox" style="font-weight: 400; font-size: 13.5px; color: var(--ink-secondary); margin-bottom: 0;">我明白，经过 7 天安全等待期后，此申请将永久删除我的 Edifice 账户、日记、连续记录和已保存数据。</label>
+</div>
+<div class="actions-row">
+<button class="btn-submit" type="submit">申请删除账户</button>
+<a class="btn-secondary" href="mailto:supernaturalbrian@gmail.com?subject=Account%20Deletion%20Request%20-%20Edifice">改为发送电子邮件联系支持团队</a>
+</div>
+</form>
+<div class="success-msg" id="successMsg">
+<strong>你的电子邮件应用现在应该已打开</strong>请求表单已填写好。发送后，我们会回复确认。如果表单没有打开，请发送电子邮件至<a href="mailto:supernaturalbrian@gmail.com?subject=Account%20Deletion%20Request%20-%20Edifice">supernaturalbrian@gmail.com</a>直接操作——这就是相同的途径，也是正式生效的方式。</div>
+</div>
+<h2 style="margin-top: 36px;">订阅与账单</h2>
+<p>请注意，删除 Edifice 账户并不会<strong>否</strong>不会自动取消通过 Google Play Store 或 Apple App Store 计费的有效订阅。为避免未来续费，请直接在 Google Play 或 Apple ID 账户设置中管理或取消订阅。</p>
+</article>
+</article>
+</main>
+<footer class="site-footer"><div class="wrap"><div><a class="brand" href="/zh/">Edifice</a><p class="footer-note">以神的话语建立你的人生。<br/>© 2026 Edifice</p></div><nav aria-label="页脚导航" class="footer-links"><a href="/zh/daily-confessions/">每日宣告</a><a href="/zh/themes/">主题</a><a href="/zh/scenes/">圣经篇章</a><a href="/zh/glory/">Glory</a><a href="/zh/about/">关于</a><a href="/zh/download/">下载</a><a href="/zh/support/">支持</a><a href="/zh/privacy/">隐私</a><a href="/zh/terms/">条款</a><a href="/zh/delete-account/">删除账户</a></nav></div><p class="bible-attribution" lang="zh">经文摘录采用《新标点和合本》（简体中文），公共领域。 <a href="https://ebible.org/cmn-cu89s/copyright.htm" rel="noopener">eBible.org</a></p></footer>
+<script src="/assets/delete-account.js"></script>
+</body>
+</html>

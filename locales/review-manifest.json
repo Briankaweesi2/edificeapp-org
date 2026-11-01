@@ -1,0 +1,330 @@
+{
+  "source_language": "en",
+  "target_languages": {
+    "zh": "Mandarin Chinese (Simplified)",
+    "hi": "Hindi",
+    "es": "Spanish",
+    "ar": "Arabic"
+  },
+  "translation_status": "complete",
+  "pages": [
+    {
+      "path": "about/index.html",
+      "url": "/about/"
+    },
+    {
+      "path": "c/index.html",
+      "url": "/c/"
+    },
+    {
+      "path": "campaign/bible-month-2026/day/1/index.html",
+      "url": "/campaign/bible-month-2026/day/1/"
+    },
+    {
+      "path": "campaign/bible-month-2026/day/10/index.html",
+      "url": "/campaign/bible-month-2026/day/10/"
+    },
+    {
+      "path": "campaign/bible-month-2026/day/11/index.html",
+      "url": "/campaign/bible-month-2026/day/11/"
+    },
+    {
+      "path": "campaign/bible-month-2026/day/12/index.html",
+      "url": "/campaign/bible-month-2026/day/12/"
+    },
+    {
+      "path": "campaign/bible-month-2026/day/13/index.html",
+      "url": "/campaign/bible-month-2026/day/13/"
+    },
+    {
+      "path": "campaign/bible-month-2026/day/14/index.html",
+      "url": "/campaign/bible-month-2026/day/14/"
+    },
+    {
+      "path": "campaign/bible-month-2026/day/15/index.html",
+      "url": "/campaign/bible-month-2026/day/15/"
+    },
+    {
+      "path": "campaign/bible-month-2026/day/16/index.html",
+      "url": "/campaign/bible-month-2026/day/16/"
+    },
+    {
+      "path": "campaign/bible-month-2026/day/17/index.html",
+      "url": "/campaign/bible-month-2026/day/17/"
+    },
+    {
+      "path": "campaign/bible-month-2026/day/18/index.html",
+      "url": "/campaign/bible-month-2026/day/18/"
+    },
+    {
+      "path": "campaign/bible-month-2026/day/19/index.html",
+      "url": "/campaign/bible-month-2026/day/19/"
+    },
+    {
+      "path": "campaign/bible-month-2026/day/2/index.html",
+      "url": "/campaign/bible-month-2026/day/2/"
+    },
+    {
+      "path": "campaign/bible-month-2026/day/20/index.html",
+      "url": "/campaign/bible-month-2026/day/20/"
+    },
+    {
+      "path": "campaign/bible-month-2026/day/21/index.html",
+      "url": "/campaign/bible-month-2026/day/21/"
+    },
+    {
+      "path": "campaign/bible-month-2026/day/22/index.html",
+      "url": "/campaign/bible-month-2026/day/22/"
+    },
+    {
+      "path": "campaign/bible-month-2026/day/23/index.html",
+      "url": "/campaign/bible-month-2026/day/23/"
+    },
+    {
+      "path": "campaign/bible-month-2026/day/24/index.html",
+      "url": "/campaign/bible-month-2026/day/24/"
+    },
+    {
+      "path": "campaign/bible-month-2026/day/25/index.html",
+      "url": "/campaign/bible-month-2026/day/25/"
+    },
+    {
+      "path": "campaign/bible-month-2026/day/26/index.html",
+      "url": "/campaign/bible-month-2026/day/26/"
+    },
+    {
+      "path": "campaign/bible-month-2026/day/27/index.html",
+      "url": "/campaign/bible-month-2026/day/27/"
+    },
+    {
+      "path": "campaign/bible-month-2026/day/28/index.html",
+      "url": "/campaign/bible-month-2026/day/28/"
+    },
+    {
+      "path": "campaign/bible-month-2026/day/29/index.html",
+      "url": "/campaign/bible-month-2026/day/29/"
+    },
+    {
+      "path": "campaign/bible-month-2026/day/3/index.html",
+      "url": "/campaign/bible-month-2026/day/3/"
+    },
+    {
+      "path": "campaign/bible-month-2026/day/30/index.html",
+      "url": "/campaign/bible-month-2026/day/30/"
+    },
+    {
+      "path": "campaign/bible-month-2026/day/4/index.html",
+      "url": "/campaign/bible-month-2026/day/4/"
+    },
+    {
+      "path": "campaign/bible-month-2026/day/5/index.html",
+      "url": "/campaign/bible-month-2026/day/5/"
+    },
+    {
+      "path": "campaign/bible-month-2026/day/6/index.html",
+      "url": "/campaign/bible-month-2026/day/6/"
+    },
+    {
+      "path": "campaign/bible-month-2026/day/7/index.html",
+      "url": "/campaign/bible-month-2026/day/7/"
+    },
+    {
+      "path": "campaign/bible-month-2026/day/8/index.html",
+      "url": "/campaign/bible-month-2026/day/8/"
+    },
+    {
+      "path": "campaign/bible-month-2026/day/9/index.html",
+      "url": "/campaign/bible-month-2026/day/9/"
+    },
+    {
+      "path": "daily-confessions/index.html",
+      "url": "/daily-confessions/"
+    },
+    {
+      "path": "delete-account/index.html",
+      "url": "/delete-account/"
+    },
+    {
+      "path": "download/index.html",
+      "url": "/download/"
+    },
+    {
+      "path": "glory/index.html",
+      "url": "/glory/"
+    },
+    {
+      "path": "index.html",
+      "url": "/"
+    },
+    {
+      "path": "privacy/index.html",
+      "url": "/privacy/"
+    },
+    {
+      "path": "s/index.html",
+      "url": "/s/"
+    },
+    {
+      "path": "scenes/1-corinthians-13/index.html",
+      "url": "/scenes/1-corinthians-13/"
+    },
+    {
+      "path": "scenes/ephesians-6/index.html",
+      "url": "/scenes/ephesians-6/"
+    },
+    {
+      "path": "scenes/hebrews-11/index.html",
+      "url": "/scenes/hebrews-11/"
+    },
+    {
+      "path": "scenes/index.html",
+      "url": "/scenes/"
+    },
+    {
+      "path": "scenes/isaiah-53/index.html",
+      "url": "/scenes/isaiah-53/"
+    },
+    {
+      "path": "scenes/john-15/index.html",
+      "url": "/scenes/john-15/"
+    },
+    {
+      "path": "scenes/philippians-4/index.html",
+      "url": "/scenes/philippians-4/"
+    },
+    {
+      "path": "scenes/psalm-1/index.html",
+      "url": "/scenes/psalm-1/"
+    },
+    {
+      "path": "scenes/psalm-103/index.html",
+      "url": "/scenes/psalm-103/"
+    },
+    {
+      "path": "scenes/psalm-121/index.html",
+      "url": "/scenes/psalm-121/"
+    },
+    {
+      "path": "scenes/psalm-23/index.html",
+      "url": "/scenes/psalm-23/"
+    },
+    {
+      "path": "scenes/psalm-27/index.html",
+      "url": "/scenes/psalm-27/"
+    },
+    {
+      "path": "scenes/psalm-91/index.html",
+      "url": "/scenes/psalm-91/"
+    },
+    {
+      "path": "support/index.html",
+      "url": "/support/"
+    },
+    {
+      "path": "terms/index.html",
+      "url": "/terms/"
+    },
+    {
+      "path": "themes/anointing/index.html",
+      "url": "/themes/anointing/"
+    },
+    {
+      "path": "themes/dominion/index.html",
+      "url": "/themes/dominion/"
+    },
+    {
+      "path": "themes/faith/index.html",
+      "url": "/themes/faith/"
+    },
+    {
+      "path": "themes/finance/index.html",
+      "url": "/themes/finance/"
+    },
+    {
+      "path": "themes/grace/index.html",
+      "url": "/themes/grace/"
+    },
+    {
+      "path": "themes/growth/index.html",
+      "url": "/themes/growth/"
+    },
+    {
+      "path": "themes/healing/index.html",
+      "url": "/themes/healing/"
+    },
+    {
+      "path": "themes/identity/index.html",
+      "url": "/themes/identity/"
+    },
+    {
+      "path": "themes/index.html",
+      "url": "/themes/"
+    },
+    {
+      "path": "themes/love/index.html",
+      "url": "/themes/love/"
+    },
+    {
+      "path": "themes/prayer/index.html",
+      "url": "/themes/prayer/"
+    },
+    {
+      "path": "themes/purpose/index.html",
+      "url": "/themes/purpose/"
+    },
+    {
+      "path": "themes/righteousness/index.html",
+      "url": "/themes/righteousness/"
+    },
+    {
+      "path": "themes/souls/index.html",
+      "url": "/themes/souls/"
+    },
+    {
+      "path": "themes/spirit/index.html",
+      "url": "/themes/spirit/"
+    },
+    {
+      "path": "themes/wisdom/index.html",
+      "url": "/themes/wisdom/"
+    },
+    {
+      "path": "bible-month/index.html",
+      "url": "/bible-month/"
+    }
+  ],
+  "unique_strings": 1782,
+  "source_words": 14827,
+  "scripture": "Keep source verses in English KJV until matched against the cited licensed editions and labeled with edition names.",
+  "review_gate": [
+    "Fill each target locale value; no empty values accepted.",
+    "Review all scripture quotations against the named translated edition.",
+    "Have native speakers review doctrine, legal, marketing, privacy, and account deletion text.",
+    "Check Arabic right-to-left layout and all links per locale."
+  ],
+  "languages": {
+    "en": "English",
+    "zh": "Simplified Chinese",
+    "hi": "Hindi",
+    "es": "Spanish",
+    "ar": "Arabic"
+  },
+  "locales": {
+    "zh": {
+      "entries": 1782,
+      "empty": 0
+    },
+    "hi": {
+      "entries": 1782,
+      "empty": 0
+    },
+    "es": {
+      "entries": 1782,
+      "empty": 0
+    },
+    "ar": {
+      "entries": 1782,
+      "empty": 0
+    }
+  }
+}
