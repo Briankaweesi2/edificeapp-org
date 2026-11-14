@@ -293,8 +293,8 @@
       "url": "/bible-month/"
     }
   ],
-  "unique_strings": 1782,
-  "source_words": 14827,
+  "unique_strings": 1808,
+  "source_words": 15358,
   "scripture": "Keep source verses in English KJV until matched against the cited licensed editions and labeled with edition names.",
   "review_gate": [
     "Fill each target locale value; no empty values accepted.",
@@ -311,19 +311,19 @@
   },
   "locales": {
     "zh": {
-      "entries": 1782,
+      "entries": 1808,
       "empty": 0
     },
     "hi": {
-      "entries": 1782,
+      "entries": 1808,
       "empty": 0
     },
     "es": {
-      "entries": 1782,
+      "entries": 1808,
       "empty": 0
     },
     "ar": {
-      "entries": 1782,
+      "entries": 1808,
       "empty": 0
     }
   }
