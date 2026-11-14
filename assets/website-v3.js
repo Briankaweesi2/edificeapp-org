@@ -3,7 +3,7 @@
   'use strict';
   var ID = 'G-YH52011S44';
   function tr(value){ return window.edificeText && window.edificeText[value] || value; }
-  var KEY = 'edifice-website-analytics-v1';
+  var KEY = 'edifice-website-analytics-v2';
   var active = false;
   var production = /^(www\.)?edificeapp\.org$/.test(location.hostname);
   var saved = '';
