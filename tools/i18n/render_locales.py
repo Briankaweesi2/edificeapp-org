@@ -166,7 +166,7 @@ def main():
    target=ROOT/lang/p.relative_to(ROOT);target.parent.mkdir(parents=True,exist_ok=True);target.write_text(render(p,lang,cat,bible,routes),encoding='utf8');changed+=1
  for lang in LANGS:
   cat=json.loads((ROOT/'locales'/f'{lang}.json').read_text())
-  jskeys=['Website analytics preference','Your cookie preferences','We use optional analytics cookies to understand how our website is used and improve your experience. You can accept or reject them, and change your choice anytime.','Learn more','Reject optional','Accept cookies','Cookie preferences','Open in Edifice','I am requesting deletion of my Edifice account.','Account email:','Reason (optional):','I understand this permanently deletes your account, journal entries, streaks and saved data ','after the 7-day safety period.','Account Deletion Request - Edifice']
+  jskeys=['Website analytics preference','Your cookie preferences','We use optional analytics to understand website use. Google Analytics uses cookies; Ahrefs Web Analytics is cookie-free. You can accept or reject both, and change your choice anytime.','Learn more','Reject optional','Accept cookies','Cookie preferences','Open in Edifice','I am requesting deletion of my Edifice account.','Account email:','Reason (optional):','I understand this permanently deletes your account, journal entries, streaks and saved data ','after the 7-day safety period.','Account Deletion Request - Edifice']
   mapping={k:cat.get(k,k) for k in jskeys}
   asset=ROOT/'assets'/f'i18n-{lang}.js'
   asset.write_text('window.edificeText='+json.dumps(mapping,ensure_ascii=False)+';\n',encoding='utf8')
