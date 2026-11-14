@@ -3,7 +3,7 @@
   'use strict';
   var ID = 'G-YH52011S44';
   function tr(value){ return window.edificeText && window.edificeText[value] || value; }
-  var KEY = 'edifice-website-analytics-v1';
+  var KEY = 'edifice-website-analytics-v2';
   var active = false;
   var production = /^(www\.)?edificeapp\.org$/.test(location.hostname);
   var saved = '';
@@ -29,6 +29,11 @@
     script.async = true;
     script.src = 'https://www.googletagmanager.com/gtag/js?id='+ID;
     document.head.appendChild(script);
+    var ahrefsScript = document.createElement('script');
+    ahrefsScript.async = true;
+    ahrefsScript.src = 'https://analytics.ahrefs.com/analytics.js';
+    ahrefsScript.setAttribute('data-key', '5KSOqv39RR64OWCllsTC3w');
+    document.head.appendChild(ahrefsScript);
   }
   function clearCookies() {
     document.cookie.split(';').forEach(function (cookie) {
